@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  padding: 0;
+  margin: 0;
+  color: #fff !important; }
+
+hr {
+  background-color: #000107;
+  border: 2px solid #080E2E !important;
+  margin: 0; }
+
+.active {
+  background-color: #EF5350;
+  color: #4B45E7; }
+
+.progressBar {
+  background-color: #4B45E7; }
+
+.bg-darker {
+  background-color: #080E2E !important; }
+
+.Scrolled {
+  background-color: black !important; }
+
+.Scrolled2 {
+  background-color: red !important; }
+
+.bg_black {
+  background-color: #000; }
+
+.text_gray {
+  color: #CCCCCC; }
+
+nav ul li {
+  padding: 7px 25px; }
+  nav ul li a:hover {
+    background-color: #EF5350; }
+
+#home {
+  background-color: #080E2E; }
+  #home .home_right {
+    position: relative; }
+    #home .home_right img {
+      position: relative;
+      height: 565px;
+      margin-bottom: -24px;
+      z-index: 1; }
+  #home .home_right::after {
+    content: "";
+    position: absolute;
+    background: url("../img/proBg.png");
+    height: 100%;
+    left: 50%;
+    width: 317px;
+    z-index: 0;
+    transform: translate(-50%); }
+
+#about {
+  background-color: #000107; }
+
+#service {
+  background-color: #080E2E; }
+  #service .card {
+    background-color: #080E2E; }
+    #service .card .icoMon {
+      font-size: 100px; }
+
+#eduExprience {
+  background-color: #000107;
+  color: #fff; }
+  #eduExprience .education img {
+    background: #4B45E7;
+    padding: 11px;
+    height: 60px;
+    width: 56px; }
+  #eduExprience .exprience img {
+    background: #EF5350;
+    padding: 11px;
+    height: 60px;
+    width: 56px; }
+
+#portfolio {
+  background: #080E2E;
+  color: #fff; }
+  #portfolio .mix-btn {
+    display: inline;
+    color: #CCCCCC; }
+    #portfolio .mix-btn a {
+      padding: 10px; }
+    #portfolio .mix-btn .mixitup-control-active {
+      color: #fff;
+      font-weight: bold; }
+  #portfolio .MIXcont .portRap {
+    position: relative;
+    margin: 15px 0; }
+    #portfolio .MIXcont .portRap .port_img img {
+      width: 100%; }
+    #portfolio .MIXcont .portRap .image_lay {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(46, 10, 51, 0.48);
+      z-index: 1;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      transition: .4s;
+      opacity: 0;
+      cursor: pointer; }
+    #portfolio .MIXcont .portRap img, #portfolio .MIXcont .portRap .image_lay:hover {
+      opacity: 1; }
+
+#CounTer {
+  background-color: #EF5350;
+  height: 100%; }
+  #CounTer .count {
+    border: 1px solid #fff;
+    text-align: center;
+    margin: 50px 18px;
+    padding: 15px; }
+    #CounTer .count .counter h2 {
+      padding: 2px; }
+
+#testmonials {
+  background: #000107; }
+  #testmonials .slider_text {
+    position: relative;
+    text-align: center; }
+    #testmonials .slider_text .iCo {
+      position: absolute;
+      top: 45%;
+      height: 50px;
+      background: #EF5350;
+      width: 50px;
+      border-radius: 50%; }
+    #testmonials .slider_text i {
+      color: #fff; }
+    #testmonials .slider_text .icon-prv {
+      left: -26px; }
+    #testmonials .slider_text .icon-next {
+      right: -26px; }
+    #testmonials .slider_text .slide_bg {
+      background-color: #fff;
+      color: #000107; }
+      #testmonials .slider_text .slide_bg img {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%; }
+
+#contact {
+  background-color: #080E2E; }
+  #contact .iconFooter {
+    padding: 0 10px 0 0; }
+  #contact .contact_input .sub-btn {
+    background-color: #EF5350;
+    border: none;
+    padding: 15px 25px; }
+
+#lowFooter {
+  background-color: #000107; }
+  #lowFooter ul {
+    margin: 0; }
+    #lowFooter ul li {
+      padding: 5px 20px;
+      border: 2px solid #fff; }
+      #lowFooter ul li a {
+        color: #fff; }
+    #lowFooter ul li:hover {
+      background-color: #4B45E7;
+      border: 2px solid #4B45E7; }

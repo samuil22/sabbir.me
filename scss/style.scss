@@ -1,0 +1,243 @@
+$Bg-colorOne: #080E2E;
+$Bg_colorTwo: #000107;
+$white: #fff;
+$graylight: #CCCCCC;
+$progress_bg:#4B45E7;
+$counter_bg:#EF5350;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+} 
+body{
+    padding: 0;
+    margin: 0;
+    color: $white !important;
+}
+hr{
+    background-color: $Bg_colorTwo;
+    border: 2px solid $Bg-colorOne !important;
+    margin: 0;
+}
+.active{
+    background-color: $counter_bg;
+    color: $progress_bg;
+}
+.progressBar{
+    background-color: $progress_bg;
+}
+.bg-darker{
+    background-color: $Bg-colorOne !important;
+}
+ .Scrolled{
+    background-color: black !important;
+}
+
+ .Scrolled2{
+    background-color: red !important;
+}
+.bg_black{
+    background-color: #000;
+}
+.text_gray{
+    color: $graylight;
+}
+
+nav{
+    ul{
+        li{
+            padding: 7px 25px;
+            a:hover{
+                background-color: $counter_bg;
+            }
+        }
+    }
+}
+
+#home{
+    background-color: $Bg-colorOne;
+    .home_right{
+        position: relative;
+        img{
+            position: relative;
+            height: 565px;
+            margin-bottom: -24px; 
+            z-index: 1;
+        } 
+    }
+    .home_right::after{
+            content: "";
+            position: absolute;
+            background: url('../img/proBg.png');
+            height: 100%;
+            left: 50%;
+            width: 317px;
+            z-index: 0;
+            transform: translate(-50%);
+        }
+}
+#about{
+    background-color: $Bg_colorTwo;
+}
+#service{
+    background-color: $Bg-colorOne;
+    .card{
+        background-color: $Bg-colorOne;
+        .icoMon{
+            font-size: 100px;
+        }
+    }
+}
+
+#eduExprience{
+    background-color: $Bg_colorTwo;
+    color: $white;
+    .education{
+        img{
+            background: #4B45E7;
+            padding: 11px;
+            height: 60px;
+            width: 56px;
+        }
+    }
+    .exprience{
+        img{
+            background:#EF5350 ;
+            padding: 11px;
+            height: 60px;
+            width: 56px;
+        }
+        
+    }
+}
+#portfolio{
+    background: $Bg-colorOne;
+    color: $white;
+    .mix-btn{
+        display: inline; 
+        color:$graylight;
+        a{
+            padding: 10px;
+        }
+        .mixitup-control-active{
+            color:$white;
+            font-weight: bold;
+        }
+    }
+    .MIXcont{
+        .portRap{
+            position: relative;
+            margin: 15px 0;
+            .port_img{
+                img{
+                   width: 100%; 
+                }
+            }
+            .image_lay{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top:0;
+                left: 0;
+                background: rgba(46, 10, 51, 0.48);
+                z-index: 1;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                transition: .4s;
+                opacity: 0;
+                cursor: pointer;
+            }
+            img,.image_lay:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+#CounTer{
+    background-color:$counter_bg ;
+    height: 100%;
+    
+    .count{
+        border: 1px solid $white;
+        text-align: center;
+        margin: 50px 18px;
+        padding: 15px;
+        .counter{
+            h2{
+                padding: 2px;
+            }
+        }
+    }
+}
+
+#testmonials{
+    background:$Bg_colorTwo;
+    
+    .slider_text{
+        position: relative;
+        text-align: center;
+        .iCo{
+            position: absolute;
+            top: 45%;
+            height: 50px;
+            background: #EF5350;
+            width: 50px;
+            border-radius: 50%;
+        }
+        i{
+            color:$white;
+        }
+        .icon-prv{
+            left:-26px;
+        }
+        .icon-next{
+            right: -26px;
+        }
+        .slide_bg{
+            background-color: $white;
+            color:$Bg_colorTwo;
+                img{
+                    height: 150px;
+                    width: 150px;
+                    border-radius: 50%;
+                }
+        }
+    }
+}
+
+#contact{
+    background-color: $Bg-colorOne;
+    .iconFooter{
+        padding: 0 10px 0 0;
+    }
+    .contact_input{
+        .sub-btn{
+            background-color: $counter_bg;
+            border: none;
+            padding: 15px 25px;
+        }
+    }
+}
+
+#lowFooter{
+    background-color: $Bg_colorTwo;
+    ul{
+        margin: 0;
+        li{
+            padding: 5px 20px;
+            border: 2px solid $white;
+            a{
+                color:$white;
+            } 
+        }
+        li:hover{
+                background-color: $progress_bg;
+                border: 2px solid $progress_bg;
+            }
+    }
+}
